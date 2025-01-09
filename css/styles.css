@@ -1,0 +1,422 @@
+/* General */
+body {
+    text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;   
+}
+
+body.home .menu a[href="/index.html"]:not(.logo a),
+body.portifolio .menu a[href="/views/portifolio.html"],
+body.servicios .menu a[href="/views/servicios.html"],
+body.presupuesto .menu a[href="/views/presupuesto.html"],
+body.contacto .menu a[href="/views/contacto.html"] {
+    background-color: rgb(252, 252, 252);
+    color: blue;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+body.home .menu a[href="/index.html"]:hover,
+body.contacto .menu a[href="/views/contacto.html"]:hover,
+body.servicios .menu a[href="/views/servicios.html"]:hover {
+    background-color: #ffffff; 
+    color: #0056b3; 
+}
+
+.seccion {
+    text-align: center;
+}
+
+/* Estilo del encabezado y menú */
+header {
+    background-color: #004080; 
+    color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+}
+/* Menú */
+.menu {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 10px 20px; 
+}
+
+.logo img {
+    max-width: 100px; 
+    width: 100%; 
+    height: auto;
+}
+
+body.home .logo a {
+    background-color: transparent; 
+    border: none;
+}
+
+body.home .logo img {
+    display: block;                
+    border: none;                  
+    background-color: transparent; 
+}
+
+
+/* Links de navegación */
+.nav-links {
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 30px; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.nav-links a {
+    text-decoration: none; 
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px; 
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: white;
+    color: #004080; 
+}
+
+body, .seccion {
+    text-align: center;
+}
+
+#quien-somos {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+.seccion article {
+    width: 60% ;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.titulo-quien-somos {
+    width: 25%;
+    margin: 0 auto;
+    flex: 1; 
+    font-size: 1.2rem;
+    color: #000000;
+    line-height: 1.8;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; 
+}
+
+.contenido-quien-somos {
+    background-color: #ffffff;
+    width: 80%;
+    font-size: 1.4rem;
+    text-align: justify;
+    margin-left: 10%;
+
+}
+.imagen-quien-somos img {
+    flex-shrink: 0; 
+    width: 500px; 
+    height: auto;
+    border-radius: 10px;
+    margin-right: 30%;
+}
+
+
+#presentacion {
+    position: relative;
+    text-align: center;
+}
+
+/* Estilo para la sección del banner */
+.banner-section {
+    width: 100%; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden;
+}
+
+.banner-link {
+    display: block; 
+}
+
+/* Estilo para la imagen del banner */
+.banner-img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    object-fit: cover; 
+}
+
+.banner {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+/* Estilo de la sección de servicios */
+#servicios {
+    background-color: #ffffff; 
+    padding: 50px 20px;
+}
+
+/* Sección Servicios */
+#servicios {
+    background-color: #f5f5f5;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.titulo-servicios {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.contenedor-servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);;
+    gap: 20px;
+    justify-items:center;
+    padding: 20px;
+}
+
+.tarjeta-servicio {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta-servicio:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta-servicio h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.tarjeta-servicio p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Estilos para el formulario de presupuesto */
+.formulario-presupuesto {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 13px;
+    font-style: italic;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.campo input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.boton-accion {
+    padding: 12px 20px;
+    background-color: #004080;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-accion:hover {
+    background-color: #0066cc;
+}
+
+#portifolio {
+    margin-top: 40px; 
+    text-align: center;
+}
+
+
+#portifolio img {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+      
+.galeria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px; /* Espaciado entre imágenes */
+    max-width: 800px; /* Ancho máximo de la galería */
+    margin: 0 auto; /* Centrar la galería */
+    overflow: hidden;
+}
+      
+.galeria img {
+    width: 300%;
+    height: auto;
+    object-fit: cover;
+}
+
+.galeria img {
+    width: 100%; /* Ajustar las imágenes al tamaño del contenedor */
+    border-radius: 8px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+      
+main {
+    min-height: 100vh;
+}
+
+footer {
+    background-color: #004080; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.redes-sociales {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.social-icon:hover {
+    color: #ffd700; 
+}
+
+.direccion, .aviso-legal {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* redes sociales pie de página */
+.redes-sociales {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+    margin-bottom: 15px;
+}
+
+.social-icon img {
+    width: 40px; 
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.social-icon img:hover {
+    transform: scale(1.2); 
+}
+
+.campo {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-bottom: 15px; 
+}
+
+label {
+    font-weight: bold; 
+    margin-bottom: 5px; 
+}
+
+input, textarea {
+    width: 100%; 
+    max-width: 400px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+}
+
+
+/* Ajustar el tamaño del mapa */
+#mapa iframe {
+    width: 90%; 
+    max-width: 600px;
+    height: 300px; 
+    margin: 20px auto; 
+    border: none;
+}
+#contacto-info {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-info p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}

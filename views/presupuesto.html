@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VT Midias</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body class="presupuesto">
+    <!-- Menú de navegación -->
+    <header class="encabezado">
+        <nav class="menu">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="/images/LOGO_VT_500x500.png" alt="VT Midias" width="500" height="500">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/views/portifolio.html">Portifolio</a></li>
+                <li><a href="/views/servicios.html">Servicios</a></li>
+                <li><a href="/views/presupuesto.html">Presupuesto</a></li>
+                <li><a href="/views/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Sección de Presentación -->
+<main>
+        <!-- Sección de Banner -->
+        <div class="banner-section">
+            <a href="/views/presupuesto.html" class="banner-link">
+                <img src="/images/image_pagina_web_1920x500.png" alt="Banner de la Empresa" class="banner-img" width="1920" height="500">
+            </a>
+        </div>
+    <!-- Sección con formulario -->
+<section id="llamada-accion" class="seccion">
+    <h2>¡Contáctanos hoy!</h2>
+    <p>Complete el siguiente formulario abajo para solicitar tu presupuesto.</p>
+    <form action="#" method="POST" class="formulario-presupuesto">
+        <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+        </div>
+        <div class="campo">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required placeholder="Tu correo electrónico">
+        </div>
+        <div class="campo">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required placeholder="Tu número de teléfono">
+        </div>
+        <div class="campo">
+            <label for="negocio">¿Qué estilo de negocio tienes?</label>
+            <input type="text" id="negocio" name="negocio" required placeholder="Ejemplo: Restaurante, Tienda Online, etc.">
+        </div>
+        <div class="campo">
+            <label for="privacidad">
+                <input type="checkbox" id="privacidad" name="privacidad" required> Acepto la política de privacidad
+            </label>
+        </div>
+        <button type="submit" class="boton-accion">Enviar Solicitud</button>
+    </form>
+</section>
+</main>
+<!-- Sección Pie de Pagina con redes sociais-->
+<footer>
+    <div class="footer-contenedor">
+        <div class="redes-sociales">
+            <a href="https://facebook.com" target="_blank" class="social-icon">
+                <img src="/images/logotipo_meta2048x2048.png" alt="Facebook" width="2048" height="2048">
+            </a>
+            <a href="https://youtube.com" target="_blank" class="social-icon">
+                <img src="/images/logo_youtube_348x348.png" alt="youtube" width="348" height="348">
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-icon">
+                <img src="/images/logo_ig_204x192.png" alt="Instagram" width="204" height="192">
+            </a>
+        </div>
+        <p class="direccion">Dirección: Calle Alcalá, 77 Madrid, España</p>
+        <p class="aviso-legal">© 2024 VT Midias. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>

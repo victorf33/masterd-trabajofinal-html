@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VT Midias</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body class="home">
+    <!-- Menú de navegación -->
+    <header class="encabezado">
+        <nav class="menu">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="/images/LOGO_VT_500x500.png" alt="VT_Midias" width="500" height="500">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/views/portifolio.html">Portifolio</a></li>
+                <li><a href="/views/servicios.html">Servicios</a></li>
+                <li><a href="/views/presupuesto.html">Presupuesto</a></li>
+                <li><a href="/views/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <!-- Sección de Banner -->
+    <div class="banner-section">
+        <a href="/views/presupuesto.html" class="banner-link">
+            <img src="/images/image_pagina_web_1920x500.png" alt="Banner_de_la_Empresa" class="banner-img" width="1920" height="500">
+        </a>
+    </div>
+
+    <!-- Sección Quién Somos -->
+<div id="quien-somos" class="seccion">
+    <article>
+        <h2 class="titulo-quien-somos">¿Quien somos?</h2>
+            <p class="contenido-quien-somos"></p>
+                En VT Mídias, somos un equipo de expertos en marketing digital comprometidos en ayudar a nuestros clientes a crecer y destacar en el mundo online. Con más de <strong>6 años</strong> de experiencia, hemos trabajado con empresas de diversos sectores, desarrollando estrategias innovadoras y personalizadas que generan resultados reales. Desde la gestión de publicidad paga hasta el diseño de sitios web optimizados, nuestra misión es ofrecer soluciones completas que maximicen el alcance y el impacto de tu negocio.
+    </article>
+    <div class="imagen-quien-somos">
+        <img src="/images/victor_pagina_web_1080x1080_uien_somos.png" alt="image_quien_somos" width="1080" height="1080">
+    </div>    
+</div>
+        
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="seccion">
+        <h2 class="titulo-servicios">Nuestros Servicios</h2>
+        <div class="contenedor-servicios">
+            <div class="tarjeta-servicio">
+                <h3>Gestión de Publicidad Paga</h3>
+                <p>Optimizamos tus inversiones publicitarias mediante estrategias diseñadas para maximizar resultados. Analizamos tu público objetivo para segmentar con precisión y desarrollamos anuncios atractivos que conecten con tus clientes ideales. Implementamos campañas en plataformas clave como Google Ads, Meta Ads (Facebook e Instagram), y otras, monitoreando constantemente su desempeño para realizar ajustes que incrementen el retorno de inversión. Nuestro enfoque está en convertir clics en clientes, utilizando métricas claras, creatividad innovadora y un seguimiento constante de las tendencias del mercado. ¡Haz que cada euro invertido cuente!</p>
+            </div>
+            <div class="tarjeta-servicio">
+                <h3>Consultoría Personalizada</h3>
+                <p>Nuestro enfoque se centra en identificar las oportunidades más prometedoras para tu negocio. A través de un análisis exhaustivo de tu mercado, competencia y objetivos, diseñamos estrategias a medida que impulsan tu crecimiento. Ya sea que busques optimizar tus procesos internos o expandir tu alcance, trabajamos contigo para adaptar soluciones específicas y efectivas que garanticen el éxito en cada etapa de tu desarrollo empresarial. ¡Te ayudamos a transformar tu visión en resultados tangibles!</p>
+            </div>
+            <div class="tarjeta-servicio">
+                <h3>Diseño Web y Marketing</h3>
+                <p>Desarrollamos páginas web intuitivas y adaptadas a las necesidades de tu negocio, garantizando una experiencia de usuario excepcional. Combinamos diseños atractivos con funcionalidades avanzadas para asegurar que tu presencia online sea tanto profesional como efectiva. Además, implementamos estrategias de marketing digital personalizadas que no solo aumentan tu visibilidad, sino que también convierten visitantes en clientes fieles, maximizando tu retorno de inversión y ayudando a tu marca a destacarse en un mercado competitivo. ¡Transforma tu presencia online y alcanza tus objetivos comerciales!</p>
+            </div>
+            <div class="tarjeta-servicio">
+                <h3>Soporte Técnico 24/7</h3>
+                <p>Nuestro equipo de soporte técnico está disponible en todo momento para garantizar que tus sistemas funcionen sin interrupciones. Ofrecemos soluciones rápidas y eficientes para resolver cualquier problema que pueda surgir, minimizando el tiempo de inactividad. Ya sea que enfrentes dificultades con tu infraestructura digital o problemas técnicos menores, nuestros expertos están listos para ayudarte de manera proactiva, asegurando que tu empresa siga operando con normalidad y sin contratiempos.</p>
+            </div>
+        </div>
+    </section>    
+    
+        <!-- Sección de Formulario -->
+        <section id="llamada-accion" class="seccion">
+            <h2>¡Contáctanos hoy!</h2>
+            <p>Complete el siguiente formulario abajo para solicitar tu presupuesto.</p>
+            <form action="#" method="POST" class="formulario-presupuesto">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required placeholder="Tu correo electrónico">
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="Tu número de teléfono">
+                </div>
+                <div class="campo">
+                    <label for="negocio">¿Qué estilo de negocio tienes?</label>
+                    <input type="text" id="negocio" name="negocio" required placeholder="Ejemplo: Restaurante, Tienda Online, etc.">
+                </div>
+                <div class="campo">
+                    <label for="privacidad">
+                        <input type="checkbox" id="privacidad" name="privacidad" required> Acepto la política de privacidad
+                    </label>
+                </div>
+                <button type="submit" class="boton-accion">Enviar Solicitud</button>
+            </form>
+        </section>
+        
+        <!-- Sección de Portifolio con algunos clientes -->
+        <section id="portifolio" class="seccion">
+            <h2>Algunos de nuestros trabajos</h2>
+            <div class="galeria">
+                <img src="/images/portifolio_1_1920x1080.png" alt="portifolio1_vtmidias" class="galeria-imagen" width="1920" height="1080">
+                <img src="/images/portifolio_2_1920x1080.png" alt="portifolio2_vtmidias" class="galeria-imagen" width="1920" height="1080">
+                <img src="/images/portifolio_3_1920x1080.png" alt="portifolio3_vtmidias" class="galeria-imagen" width="1920" height="1080">
+                <img src="/images/portifolio_4_1920x1080.png" alt="portifolio4_vtmidias" class="galeria-imagen" width="1920" height="1080">
+              </div>
+              
+        </section>
+</main>
+    <!-- Sección Pie de Pagina con redes sociais-->
+    <footer>
+        <div class="footer-contenedor">
+            <div class="redes-sociales">
+                <a href="https://facebook.com" target="_blank" class="social-icon">
+                    <img src="/images/logotipo_meta2048x2048.png" alt="Facebook" width="2048" height="2048">
+                </a>
+                <a href="https://youtube.com" target="_blank" class="social-icon">
+                    <img src="/images/logo_youtube_348x348.png" alt="youtube" width="348" height="348">
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-icon">
+                    <img src="/images/logo_ig_204x192.png" alt="Instagram" width="204" height="192">
+                </a>
+            </div>
+            <p class="direccion">Dirección: Calle Alcalá, 77 Madrid, España</p>
+            <p class="aviso-legal">© 2024 VT Midias. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
